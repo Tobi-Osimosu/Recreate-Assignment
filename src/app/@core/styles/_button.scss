@@ -1,0 +1,280 @@
+@import 'colors';
+
+.onyx-btn-product,
+.onyx-btn-flat,
+.onyx-btn-outline,
+.google-btn,
+.facebook-btn,
+.linkedin-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  font-size: 1rem;
+  font-weight: 700;
+  // padding: 14.167px 20px !important;
+  // padding: 13.72px 25px !important;
+  // padding: 0.8575rem 2rem !important;
+  padding: 0.75rem 2rem !important;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+  border-radius: 0.3125rem !important;
+}
+
+.onyx-btn-flat {
+  color: #ffffff;
+  background: var(--primary-color);
+  border: 0.09375rem solid var(--primary-color);
+
+  &:hover {
+    color: #ffffff;
+    background: var(--primary-color);
+  }
+}
+
+.onyx-btn-product {
+  color: #ffffff;
+  background: #000000;
+  border: 0.09375rem solid #000000;
+
+  &:hover {
+    color: #ffffff;
+    background: #000000;
+  }
+}
+
+.onyx-btn-outline {
+  color: var(--primary-color);
+  background: transparent;
+  border: 0.09375rem solid var(--primary-color);
+
+  &:hover {
+    color: var(--primary-color);
+    background: #ffffff;
+  }
+}
+
+.onyx-btn-border-radius {
+  border-radius: 0.5rem !important;
+}
+
+.onyx-btn-full {
+  width: 100%;
+}
+
+.onyx-btn-standard {
+  padding-left: 3.75rem !important;
+  padding-right: 3.75rem !important;
+}
+
+.google-btn {
+  font-size: 0.875rem;
+  color: #2d40b3;
+  background: #f7f8fc;
+  border: 0.0625rem solid #a0adff;
+
+  &:hover {
+    color: #2d40b3;
+    background: #f7f8fc;
+    border: 0.0625rem solid #a0adff;
+  }
+}
+
+.facebook-btn {
+  font-size: 0.875rem;
+  color: #ffffff;
+  background: #4a7aff;
+
+  &:hover {
+    color: #ffffff;
+    background: #4a7aff;
+  }
+}
+
+.linkedin-btn {
+  font-size: 0.875rem;
+  color: #ffffff;
+  background: #0072b1;
+  border: 0.0625rem solid #a0adff;
+
+  &:hover {
+    color: #ffffff;
+    background: #0072b1;
+    border: 0.0625rem solid #a0adff;
+  }
+}
+
+.onyx-editor-primary-btn-outline {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  gap: 0.625rem;
+  font-size: 0.75rem;
+  border: 0.0625rem solid var(--primary-color) !important;
+  border-radius: 0.1875rem;
+  color: var(--primary-color) !important;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+  padding: 0.375rem 0.75rem !important;
+  min-height: 2.386875rem;
+  min-width: 7.358125rem;
+
+  svg {
+    path {
+      fill: var(--primary-color);
+      -webkit-transition: all 0.3s ease;
+      -o-transition: all 0.3s ease;
+      transition: all 0.3s ease;
+    }
+  }
+}
+
+.onyx-editor-primary-btn-flat {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  gap: 0.625rem;
+  font-size: 0.75rem;
+  border: 0.0625rem solid var(--primary-color) !important;
+  border-radius: 0.1875rem;
+  color: #ffffff !important;
+  background: var(--primary-color) !important;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+  padding: 0.375rem 0.75rem !important;
+  min-height: 2.386875rem;
+  min-width: 7.358125rem;
+
+  svg {
+    path {
+      fill: #ffffff;
+      -webkit-transition: all 0.3s ease;
+      -o-transition: all 0.3s ease;
+      transition: all 0.3s ease;
+    }
+  }
+}
+
+.onyx-editor-white-btn-outline {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  gap: 0.625rem;
+  font-size: 0.75rem;
+  border: 0.0625rem solid #ffffff !important;
+  border-radius: 0.1875rem;
+  color: #ffffff !important;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+  padding: 0.375rem 0.75rem !important;
+  min-height: 2.386875rem;
+  min-width: 7.358125rem;
+}
+
+.onyx-pc-topbar-btn-flat {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  gap: 0.625rem;
+  font-size: 0.875rem;
+  font-weight: 700;
+  padding: 0.5rem 0.625rem;
+  color: #ffffff !important;
+  border: unset !important;
+  border-radius: 0.1875rem;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+  min-width: 5.6875rem;
+  background: var(--primary-color);
+}
+
+.onyx-pc-topbar-btn-outline {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  gap: 0.625rem;
+  font-size: 0.75rem;
+  font-weight: 400;
+  padding: 0.5rem 0.625rem;
+  color: var(--primary-color) !important;
+  border: 0.09375rem solid var(--primary-color);
+  border-radius: 0.1875rem;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+  min-width: 7.358125rem;
+}
+
+.onyx-btn-outline-white {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  gap: 0.625rem;
+  font-size: 0.75rem;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+  padding: 0.375rem 0.75rem !important;
+  min-height: 2.386875rem;
+  min-width: 7.358125rem;
+  color: #ffffff;
+  background: transparent;
+  border: 0.09375rem solid #ffffff;
+  border-radius: 0.3125rem !important;
+  // gap: 1.25rem;
+
+  &:hover {
+    color: #ffffff;
+    background: #ffffff10;
+  }
+}
+
+@media screen and (max-width: 767.98px) {
+  .onyx-btn-flat,
+  .onyx-btn-outline,
+  .google-btn,
+  .facebook-btn,
+  .linkedin-btn {
+    font-size: 0.85rem;
+    padding: 0.7rem 1.4rem !important;
+  }
+}

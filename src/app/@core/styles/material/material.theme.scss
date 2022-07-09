@@ -1,0 +1,26 @@
+@use "@angular/material" as mat;
+
+@import "../colors";
+
+@include mat.core();
+
+$Recreate-primary: mat.define-palette($mat-recreate-primary, 500);
+$Recreate-accent: mat.define-palette($mat-recreate-accent, 500);
+$Recreate-warn: mat.define-palette($mat-recreate-red, 500);
+
+$Recreate-typography: mat.define-typography-config(
+  $font-family: "Inter, sans-serif",
+);
+
+$Recreate-theme: mat.define-light-theme(
+  (
+    color: (
+      primary: $Recreate-primary,
+      accent: $Recreate-accent,
+      warn: $Recreate-warn,
+    ),
+    typography: $Recreate-typography,
+  )
+);
+
+@include mat.all-component-themes($Recreate-theme);

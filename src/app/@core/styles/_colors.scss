@@ -1,0 +1,153 @@
+// Custom Palette
+$mat-recreate-primary: (
+  50: #e8e9fc,
+  100: #c5c8f7,
+  200: #9ea4f2,
+  300: #7780ec,
+  400: #5964e8,
+  500: #3c49e4,
+  600: #3642e1,
+  700: #2e39dd,
+  800: #2731d9,
+  900: #1a21d1,
+  A100: #ffffff,
+  A200: #d2d3ff,
+  A400: #9fa2ff,
+  A700: #8589ff,
+  contrast: (
+    50: #000000,
+    100: #000000,
+    200: #000000,
+    300: #000000,
+    400: #ffffff,
+    500: #ffffff,
+    600: #ffffff,
+    700: #ffffff,
+    800: #ffffff,
+    900: #ffffff,
+    A100: #000000,
+    A200: #000000,
+    A400: #000000,
+    A700: #000000,
+  ),
+);
+
+$mat-recreate-accent: (
+  50: #f5e5e7,
+  100: #e7bfc2,
+  200: #d79599,
+  300: #c76a70,
+  400: #bb4a52,
+  500: #af2a33,
+  600: #a8252e,
+  700: #9f1f27,
+  800: #961920,
+  900: #860f14,
+  A100: #ffb8ba,
+  A200: #ff8589,
+  A400: #ff5258,
+  A700: #ff383f,
+  contrast: (
+    50: #000000,
+    100: #000000,
+    200: #000000,
+    300: #000000,
+    400: #ffffff,
+    500: #ffffff,
+    600: #ffffff,
+    700: #ffffff,
+    800: #ffffff,
+    900: #ffffff,
+    A100: #000000,
+    A200: #000000,
+    A400: #000000,
+    A700: #ffffff,
+  ),
+);
+
+$mat-recreate-red: (
+  50: #fde0e4,
+  100: #fab3bc,
+  200: #f78090,
+  300: #f34d63,
+  400: #f12641,
+  500: #ee0020,
+  600: #ec001c,
+  700: #e90018,
+  800: #e70013,
+  900: #e2000b,
+  A100: #ffffff,
+  A200: #ffd6d7,
+  A400: #ffa3a5,
+  A700: #ff8a8c,
+  contrast: (
+    50: #000000,
+    100: #000000,
+    200: #000000,
+    300: #000000,
+    400: #ffffff,
+    500: #ffffff,
+    600: #ffffff,
+    700: #ffffff,
+    800: #ffffff,
+    900: #ffffff,
+    A100: #000000,
+    A200: #000000,
+    A400: #000000,
+    A700: #000000,
+  ),
+);
+
+$primary: #3c49e4;
+$accent: #2d40b3;
+
+$purple-light: #f6f6ff;
+$purple-light2: #cfd6ff;
+$purple-light3: #a0adff;
+
+$black1: #333333;
+$black2: #222222;
+
+$grey1: #4d4d4d;
+$grey2: #989db3;
+$grey3: #848484;
+
+$white: #ffffff;
+
+$dark-purple: #120b3e;
+
+$colors: (
+  --primary-color: (
+    $primary,
+  ),
+  --accent-color: (
+    $accent,
+  ),
+  --variation1: (
+    $black1,
+  ),
+  --variation2: (
+    $purple-light,
+  ),
+  --variation3: (
+    $grey1,
+  ),
+  --header: (
+    $dark-purple,
+  ),
+  --subheader: (
+    $black2,
+  ),
+  --variation4: (
+    $grey2,
+  ),
+  --variation5: (
+    $purple-light2,
+  ),
+  --variation6: (
+    $purple-light3,
+  ),
+  --variation9: (
+    $grey3,
+  ),
+);

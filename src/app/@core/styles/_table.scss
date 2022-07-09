@@ -1,0 +1,111 @@
+.mat-table {
+  width: 100% !important;
+  margin-top: 0.9375rem !important;
+
+  td,
+  th {
+    white-space: nowrap !important;
+    padding-right: 1.5625rem !important;
+
+    &:first-child {
+      width: 5% !important;
+    }
+  }
+
+  td {
+    color: #222222 !important;
+    font-size: 0.75rem !important;
+  }
+
+  td.mat-cell {
+    border-bottom-color: rgba(209, 216, 245, 0.6) !important;
+  }
+
+  th.mat-header-cell {
+    border-bottom: none !important;
+  }
+
+  thead {
+    background: var(--variation2) !important;
+  }
+
+  tr.mat-header-row {
+    height: 3rem !important;
+  }
+
+  .mat-sort-header-content {
+    font-size: 0.875rem !important;
+    font-weight: 500 !important;
+    color: #222222 !important;
+  }
+
+  // Sort arrow color
+
+  .mat-sort-header-arrow {
+    color: var(--primary-color) !important;
+  }
+
+  .table-cta-container {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -webkit-box-align: center !important;
+    -ms-flex-align: center !important;
+    align-items: center !important;
+    -webkit-box-pack: center !important;
+    -ms-flex-pack: center !important;
+    justify-content: center !important;
+    width: 2.1875rem !important;
+    height: 2.1875rem !important;
+    border-radius: 50% !important;
+    cursor: pointer;
+  }
+
+  &.variation2 {
+    margin-top: 0rem !important;
+    border: 0.0625rem solid #f7f7ff;
+
+    td,
+    th {
+      font-weight: 500 !important;
+    }
+
+    th {
+      font-size: 0.875rem;
+    }
+
+    td {
+      font-size: 0.75rem;
+    }
+
+    td.mat-cell {
+      border-bottom-color: #f7f7ff !important;
+    }
+
+    thead {
+      background: unset !important;
+      border-bottom: 0.0625rem solid #f7f7ff;
+    }
+  }
+}
+
+.custom-tooltip {
+  background: #333333 !important;
+  color: #ffffff !important;
+  font-size: 0.6875rem !important;
+}
+
+.selectable-row {
+  cursor: pointer;
+  -webkit-transition: all 0.15s ease;
+  -o-transition: all 0.15s ease;
+  transition: all 0.15s ease;
+
+  &:hover {
+    -webkit-box-shadow: 0px 4px 24px rgba(60, 69, 115, 0.06);
+    box-shadow: 0px 4px 24px rgba(60, 69, 115, 0.06);
+    // -webkit-transform: scale(1.01);
+    // -ms-transform: scale(1.01);
+    // transform: scale(1.01);
+  }
+}

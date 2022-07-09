@@ -1,0 +1,7 @@
+@import "colors";
+
+:root {
+  @each $name, $color in $colors {
+    #{$name}: nth($color, 1);
+  }
+}

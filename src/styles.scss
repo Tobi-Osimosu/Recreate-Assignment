@@ -1,1 +1,104 @@
 /* You can add global styles to this file, and also import other style files */
+
+@import './app/@core/styles/colors';
+@import './app/@core/styles/theme';
+@import "./app/@core/styles/input";
+@import "./app/@core/styles/button";
+@import "./app/@core/styles/table";
+@import "./app/@core/styles/typography";
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+
+  &::-moz-selection {
+    color: #ffffff;
+    background: var(--primary-color);
+  }
+
+  &::selection {
+    color: #ffffff;
+    background: var(--primary-color);
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: "Inter", sans-serif;
+  background: var(--general);
+  cursor: auto !important;
+}
+
+/* Custom Scrollbar */
+
+::-webkit-scrollbar {
+  width: 9.5px;
+  height: 9.5px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 8px;
+  // background-color: #ccc;
+  // background-color: var(--primary-color);
+  background-color: #989db3;
+  border: 1.5px solid transparent;
+  background-clip: content-box;
+}
+
+/************************No highlight or select on click************************/
+
+.no-select {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */ /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently
+                                supported by Chrome, Edge, Opera and Firefox */
+}
+/*******************************************************************************/
+
+.pointer {
+  cursor: pointer;
+}
+
+.close-container {
+  position: relative;
+  cursor: pointer;
+  height: 1.875rem;
+  width: 1.875rem;
+  border-radius: 0.5rem;
+
+  .line1,
+  .line2 {
+    position: absolute;
+    top: 0.5625rem;
+    left: 0.90625rem;
+    height: 0.8125rem;
+    width: 0.0625rem;
+    background: black;
+  }
+
+  .line1 {
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+
+  .line2 {
+    -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+  }
+}
