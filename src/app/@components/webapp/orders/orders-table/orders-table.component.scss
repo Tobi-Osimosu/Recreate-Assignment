@@ -27,6 +27,16 @@
     }
 
     .right-section {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      
       .parameter-container {
         display: -webkit-box;
         display: -ms-flexbox;
