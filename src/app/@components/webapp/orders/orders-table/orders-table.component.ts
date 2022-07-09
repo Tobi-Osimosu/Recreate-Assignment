@@ -33,7 +33,6 @@ export class OrdersTableComponent implements OnInit, OnChanges {
   ngOnInit(): void {}
 
   ngOnChanges(changes: SimpleChanges): void {
-    console.log(this.data);
     this.dataSource = new MatTableDataSource(this.data!);
 
     setTimeout(() => {

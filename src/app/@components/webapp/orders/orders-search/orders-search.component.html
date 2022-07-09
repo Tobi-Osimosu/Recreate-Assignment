@@ -9,6 +9,7 @@
             <mat-icon>search</mat-icon>
           </span>
           <input
+            #input
             matInput
             placeholder="Search for category, name, company, etc"
             (input)="onSearchChange($event?.target)"
@@ -58,6 +59,15 @@
       </div>
     </div>
 
-    <button matRipple class="btn rc-btn-flat">SEARCH</button>
+    <button
+      matRipple
+      class="btn rc-btn-flat"
+      (click)="searchParams.emit(input?.value)"
+      [disabled]="
+        input.value === '' || input.value === null || input.value === undefined
+      "
+    >
+      SEARCH
+    </button>
   </div>
 </div>
