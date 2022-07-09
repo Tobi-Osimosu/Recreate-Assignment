@@ -1,6 +1,8 @@
 <div id="orders-search">
-  <div class="row">
-    <div class="col-4">
+  <div class="orders-search-row">
+    <div class="search-parameter-container">
+      <p class="search-parameter-title">What are you looking for?</p>
+
       <div class="input-style1 input-bg1">
         <mat-form-field appearance="outline" [style.width.%]="100">
           <span matPrefix class="img-fluid">
@@ -14,25 +16,36 @@
       </div>
     </div>
 
-    <div class="col-4">
+    <div class="search-parameter-container">
+      <p class="search-parameter-title">Category</p>
+
       <div class="input-style1">
         <mat-form-field appearance="outline" [style.width.%]="100">
-          <mat-select placeholder="Search for category, name, company, etc">
+          <mat-select>
             <mat-option value="all"> All </mat-option>
-            <mat-option value="all"> All </mat-option>
-            <mat-option value="all"> All </mat-option>
-            <mat-option value="all"> All </mat-option>
-            <mat-option value="all"> All </mat-option>
-            <mat-option value="all"> All </mat-option>
+            <mat-option value="large"> Large </mat-option>
+            <mat-option value="small"> Small </mat-option>
           </mat-select>
         </mat-form-field>
       </div>
     </div>
 
-    <div class="col-4">
-      <div class="cta-container">
-        <button matRipple class="btn rc-btn-flat">SEARCH</button>
+    <div class="search-parameter-container">
+      <p class="search-parameter-title">Status</p>
+
+      <div class="input-style1">
+        <mat-form-field appearance="outline" [style.width.%]="100">
+          <mat-select>
+            <mat-option value="all"> All </mat-option>
+            <mat-option value="active"> Active </mat-option>
+            <mat-option value="inactive"> Inactive </mat-option>
+          </mat-select>
+        </mat-form-field>
       </div>
+    </div>
+
+    <div class="cta-container">
+      <button matRipple class="btn rc-btn-flat">SEARCH</button>
     </div>
   </div>
 </div>

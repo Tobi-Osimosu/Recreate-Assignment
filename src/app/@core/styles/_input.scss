@@ -26,102 +26,6 @@ textarea:-webkit-autofill::first-line {
   color: #222222 !important;
 }
 
-input::-webkit-input-placeholder,
-textarea::-webkit-input-placeholder,
-select::-webkit-input-placeholder {
-  color: #bbc0c7;
-}
-
-input::-moz-placeholder,
-textarea::-moz-placeholder,
-select::-moz-placeholder {
-  color: #bbc0c7;
-}
-
-input:-ms-input-placeholder,
-textarea:-ms-input-placeholder,
-select:-ms-input-placeholder {
-  color: #bbc0c7;
-}
-
-input::-ms-input-placeholder,
-textarea::-ms-input-placeholder,
-select::-ms-input-placeholder {
-  color: #bbc0c7;
-}
-
-input::-webkit-input-placeholder,
-textarea::-webkit-input-placeholder,
-select::-webkit-input-placeholder {
-  color: #bbc0c7;
-}
-
-input::-moz-placeholder,
-textarea::-moz-placeholder,
-select::-moz-placeholder {
-  color: #bbc0c7;
-}
-
-input:-ms-input-placeholder,
-textarea:-ms-input-placeholder,
-select:-ms-input-placeholder {
-  color: #bbc0c7;
-}
-
-input::-ms-input-placeholder,
-textarea::-ms-input-placeholder,
-select::-ms-input-placeholder {
-  color: #bbc0c7;
-}
-
-input::-webkit-input-placeholder,
-textarea::-webkit-input-placeholder,
-select::-webkit-input-placeholder {
-  color: #bbc0c7;
-}
-
-input::-moz-placeholder,
-textarea::-moz-placeholder,
-select::-moz-placeholder {
-  color: #bbc0c7;
-}
-
-input:-ms-input-placeholder,
-textarea:-ms-input-placeholder,
-select:-ms-input-placeholder {
-  color: #bbc0c7;
-}
-
-input::-ms-input-placeholder,
-textarea::-ms-input-placeholder,
-select::-ms-input-placeholder {
-  color: #bbc0c7;
-}
-
-input::-webkit-input-placeholder,
-textarea::-webkit-input-placeholder,
-select::-webkit-input-placeholder {
-  color: #bbc0c7;
-}
-
-input::-moz-placeholder,
-textarea::-moz-placeholder,
-select::-moz-placeholder {
-  color: #bbc0c7;
-}
-
-input:-ms-input-placeholder,
-textarea:-ms-input-placeholder,
-select:-ms-input-placeholder {
-  color: #bbc0c7;
-}
-
-input::-ms-input-placeholder,
-textarea::-ms-input-placeholder,
-select::-ms-input-placeholder {
-  color: #bbc0c7;
-}
-
 input::-webkit-input-placeholder, textarea::-webkit-input-placeholder, select::-webkit-input-placeholder {
   color: #bbc0c7;
 }
@@ -163,6 +67,10 @@ input[type="number"] {
   -moz-appearance: textfield;
 }
 /********************************************************************************/
+
+textarea {
+  resize: none !important;
+}
 
 input,
 textarea,
@@ -216,8 +124,8 @@ textarea.mat-input-element,
   background-color: var(--primary-color);
 }
 
-textarea {
-  resize: none !important;
+.mat-option {
+  font-size: 0.875rem !important;
 }
 
 .input-style1 {

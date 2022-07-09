@@ -3,4 +3,41 @@
   border-radius: 1rem;
   background: #ffffff;
   margin-bottom: 1.5rem;
+  -webkit-box-shadow: 2px 4px 10px 0px #00143d0d;
+  box-shadow: 2px 4px 10px 0px #00143d0d;
+
+  .orders-search-row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+    gap: 0.5rem;
+    
+    .search-parameter-container {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-align: start;
+      -ms-flex-align: start;
+      align-items: flex-start;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      gap: 0.5rem;
+
+      .search-parameter-title {
+        font-family: "Greycliff CF", sans-serif;
+        font-size: 0.875rem;
+        font-weight: 700;
+        color: var(--header);
+        margin-bottom: 0rem;
+      }
+    }
+  }
 }
