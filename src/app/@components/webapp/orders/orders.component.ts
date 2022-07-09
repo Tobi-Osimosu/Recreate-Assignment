@@ -7,7 +7,7 @@ import { OrdersService } from 'src/app/@core/services/orders.service';
   styleUrls: ['./orders.component.scss'],
 })
 export class OrdersComponent {
-  data: any[] | null = [];
+  data: any[] | null = null;
 
   constructor(private ordersService: OrdersService) {}
 

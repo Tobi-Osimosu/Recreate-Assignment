@@ -39,20 +39,16 @@ export class OrdersTableComponent implements OnInit, OnChanges {
       this.dataSource!.paginator = this.paginator;
       this.dataSource!.sort = this.sort;
     });
-
-    // if (this.searchValue) {
-    //   this.search(this.searchValue);
-    // }
   }
 
-  // search(event: Event) {
-  //   const filterValue = (event.target as HTMLInputElement).value;
-  //   this.dataSource!.filter = filterValue.trim().toLowerCase();
+  search(event: Event) {
+    const filterValue = (event.target as HTMLInputElement).value;
+    this.dataSource!.filter = filterValue.trim().toLowerCase();
 
-  //   if (this.dataSource!.paginator) {
-  //     this.dataSource!.paginator.firstPage();
-  //   }
-  // }
+    if (this.dataSource!.paginator) {
+      this.dataSource!.paginator.firstPage();
+    }
+  }
 
   onPaginationChange({ pageIndex, pageSize }: any): void {
     // const skip = pageIndex * pageSize;
