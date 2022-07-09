@@ -9,7 +9,8 @@ $Recreate-accent: mat.define-palette($mat-recreate-accent, 500);
 $Recreate-warn: mat.define-palette($mat-recreate-red, 500);
 
 $Recreate-typography: mat.define-typography-config(
-  $font-family: "Inter, sans-serif",
+  // $font-family: "Inter, sans-serif",
+  $font-family: "Greycliff CF, sans-serif",
 );
 
 $Recreate-theme: mat.define-light-theme(

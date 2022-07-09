@@ -1,7 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
 
-@import './app/@core/styles/colors';
-@import './app/@core/styles/theme';
+@import "./app/@core/styles/colors";
+@import "./app/@core/styles/theme";
 @import "./app/@core/styles/input";
 @import "./app/@core/styles/button";
 @import "./app/@core/styles/table";
@@ -36,7 +36,9 @@ html {
 body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-family: "Inter", sans-serif;
+  // font-family: "Inter", sans-serif;
+  font-family: "Greycliff CF", sans-serif;
+
   cursor: auto !important;
 }
 

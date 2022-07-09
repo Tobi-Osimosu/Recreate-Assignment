@@ -1,4 +1,8 @@
 <div id="orders-table">
+    <div class="orders-table-header">
+        <h4 class="header">Product Summary</h4>
+    </div>
+
   <ng-container *ngIf="data !== null && dataSource; else noTableData">
     <div class="table-responsive">
       <table mat-table [dataSource]="dataSource" matSort>
