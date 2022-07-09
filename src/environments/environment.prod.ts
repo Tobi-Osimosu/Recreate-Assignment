@@ -1,3 +1,7 @@
 export const environment = {
-  production: true
+  production: true,
+  allCurrenciesUrl:
+    'https://cdn.jsdelivr.net/gh/fawazahmed0/currency-api@1/latest/currencies.json',
+  currencyUrl:
+    'https://cdn.jsdelivr.net/gh/fawazahmed0/currency-api@1/latest/currencies',
 };

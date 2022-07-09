@@ -4,7 +4,10 @@
 
 export const environment = {
   production: false,
-  allCurrenciesUrl: "https://cdn.jsdelivr.net/gh/fawazahmed0/currency-api@1/latest/currencies.json"
+  allCurrenciesUrl:
+    'https://cdn.jsdelivr.net/gh/fawazahmed0/currency-api@1/latest/currencies.json',
+  currencyUrl:
+    'https://cdn.jsdelivr.net/gh/fawazahmed0/currency-api@1/latest/currencies',
 };
 
 /*

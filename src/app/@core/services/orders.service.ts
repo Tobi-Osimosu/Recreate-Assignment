@@ -13,4 +13,10 @@ export class OrdersService {
 
     return this.http.get<any>(url);
   }
+
+  getCurrencyDetail(currency: string) {
+    const url = `${environment.currencyUrl}/${currency}.json`;
+
+    return this.http.get<any>(url);
+  }
 }

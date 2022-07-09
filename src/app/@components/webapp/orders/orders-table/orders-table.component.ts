@@ -30,18 +30,10 @@ export class OrdersTableComponent implements OnInit, OnChanges {
 
   constructor() {}
 
-  ngOnInit(): void {
-    // this.dataSource = new MatTableDataSource(this.data!);
-    // setTimeout(() => {
-    //   this.dataSource!.paginator = this.paginator;
-    //   this.dataSource!.sort = this.sort;
-    // });
-    // if (this.searchValue) {
-    //   this.search(this.searchValue);
-    // }
-  }
+  ngOnInit(): void {}
 
   ngOnChanges(changes: SimpleChanges): void {
+    console.log(this.data);
     this.dataSource = new MatTableDataSource(this.data!);
 
     setTimeout(() => {

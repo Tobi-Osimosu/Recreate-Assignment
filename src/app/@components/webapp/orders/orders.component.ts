@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { OrdersService } from 'src/app/@core/services/orders.service';
 
 @Component({
@@ -6,19 +6,28 @@ import { OrdersService } from 'src/app/@core/services/orders.service';
   templateUrl: './orders.component.html',
   styleUrls: ['./orders.component.scss'],
 })
-export class OrdersComponent implements OnInit {
-  data: any[] | null = null;
+export class OrdersComponent {
+  data: any[] | null = [];
 
   constructor(private ordersService: OrdersService) {}
 
-  ngOnInit(): void {
-    // this.ordersService.getAllCurrencies().subscribe((resData) => {
-    //   console.log(resData);
-    // });
-  }
-
   onGetCurrencyDetails(event: any) {
     this.data = null;
-    console.log(event);
+
+    this.ordersService.getCurrencyDetail(event).subscribe((resData: any) => {
+      if (resData) {
+        let tempArray: any[] = [];
+
+        for (const property in resData[event]) {
+          tempArray?.push({
+            name: property,
+            value: resData[event][property],
+            date: resData.date,
+          });
+        }
+
+        this.data = tempArray;
+      }
+    });
   }
 }
