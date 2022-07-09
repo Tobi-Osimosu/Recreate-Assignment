@@ -14,6 +14,7 @@ import { MatSortModule } from '@angular/material/sort';
 import { MatTooltipModule } from '@angular/material/tooltip';
 import { MatDialogModule } from '@angular/material/dialog';
 import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatAutocompleteModule } from '@angular/material/autocomplete';
 
 const material = [
   MatInputModule,
@@ -27,6 +28,7 @@ const material = [
   MatTooltipModule,
   MatDialogModule,
   MatFormFieldModule,
+  MatAutocompleteModule,
 ];
 
 @NgModule({

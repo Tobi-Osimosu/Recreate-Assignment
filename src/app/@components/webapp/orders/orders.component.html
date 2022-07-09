@@ -7,7 +7,9 @@
     </div>
   </div>
 
-  <app-orders-search></app-orders-search>
+  <app-orders-search
+    (searchParams)="onGetCurrencyDetails($event)"
+  ></app-orders-search>
 
-  <app-orders-table></app-orders-table>
+  <app-orders-table [data]="data"></app-orders-table>
 </div>

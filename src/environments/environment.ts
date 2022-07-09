@@ -3,7 +3,8 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  allCurrenciesUrl: "https://cdn.jsdelivr.net/gh/fawazahmed0/currency-api@1/latest/currencies.json"
 };
 
 /*

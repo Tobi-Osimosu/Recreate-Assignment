@@ -17,20 +17,13 @@ import { MatTableDataSource } from '@angular/material/table';
   styleUrls: ['./orders-table.component.scss'],
 })
 export class OrdersTableComponent implements OnInit, OnChanges {
-  displayedColumns: string[] = [
-    'select',
-    'name',
-    'createdDate',
-    'lastModifiedDate',
-    'processStatus',
-    'actions',
-  ];
+  displayedColumns: string[] = ['select', 'name', 'value', 'date', 'actions'];
   dataSource: MatTableDataSource<any[]> | null = null;
   selection = new SelectionModel<any>(true, []);
   totalRecords!: number;
 
   @Input() data!: any[] | null;
-  @Input() searchValue: any;
+  // @Input() searchValue: any;
 
   @ViewChild(MatPaginator) paginator!: MatPaginator;
   @ViewChild(MatSort) sort!: MatSort;
@@ -38,6 +31,17 @@ export class OrdersTableComponent implements OnInit, OnChanges {
   constructor() {}
 
   ngOnInit(): void {
+    // this.dataSource = new MatTableDataSource(this.data!);
+    // setTimeout(() => {
+    //   this.dataSource!.paginator = this.paginator;
+    //   this.dataSource!.sort = this.sort;
+    // });
+    // if (this.searchValue) {
+    //   this.search(this.searchValue);
+    // }
+  }
+
+  ngOnChanges(changes: SimpleChanges): void {
     this.dataSource = new MatTableDataSource(this.data!);
 
     setTimeout(() => {
@@ -45,21 +49,19 @@ export class OrdersTableComponent implements OnInit, OnChanges {
       this.dataSource!.sort = this.sort;
     });
 
-    if (this.searchValue) {
-      this.search(this.searchValue);
-    }
+    // if (this.searchValue) {
+    //   this.search(this.searchValue);
+    // }
   }
 
-  ngOnChanges(changes: SimpleChanges): void {}
+  // search(event: Event) {
+  //   const filterValue = (event.target as HTMLInputElement).value;
+  //   this.dataSource!.filter = filterValue.trim().toLowerCase();
 
-  search(event: Event) {
-    const filterValue = (event.target as HTMLInputElement).value;
-    this.dataSource!.filter = filterValue.trim().toLowerCase();
-
-    if (this.dataSource!.paginator) {
-      this.dataSource!.paginator.firstPage();
-    }
-  }
+  //   if (this.dataSource!.paginator) {
+  //     this.dataSource!.paginator.firstPage();
+  //   }
+  // }
 
   onPaginationChange({ pageIndex, pageSize }: any): void {
     // const skip = pageIndex * pageSize;

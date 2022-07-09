@@ -46,78 +46,45 @@
         </ng-container>
 
         <ng-container matColumnDef="name">
-          <th mat-header-cell *matHeaderCellDef mat-sort-header>Process</th>
+          <th mat-header-cell *matHeaderCellDef mat-sort-header>Name</th>
           <td mat-cell *matCellDef="let row">
             {{ row.name }}
           </td>
         </ng-container>
 
-        <ng-container matColumnDef="createdDate">
-          <th mat-header-cell *matHeaderCellDef mat-sort-header>
-            Created Date
-          </th>
-          <td mat-cell *matCellDef="let row">{{ row.createdDate | date }}</td>
+        <ng-container matColumnDef="value">
+          <th mat-header-cell *matHeaderCellDef mat-sort-header>Value</th>
+          <td mat-cell *matCellDef="let row">{{ row.value }}</td>
         </ng-container>
 
-        <ng-container matColumnDef="lastModifiedDate">
-          <th mat-header-cell *matHeaderCellDef mat-sort-header>
-            Last Modified Date
-          </th>
+        <ng-container matColumnDef="date">
+          <th mat-header-cell *matHeaderCellDef mat-sort-header>Date</th>
           <td mat-cell *matCellDef="let row">
-            {{ row.lastModifiedDate | date }}
-          </td>
-        </ng-container>
-
-        <ng-container matColumnDef="processStatus">
-          <th mat-header-cell *matHeaderCellDef mat-sort-header>Status</th>
-          <td mat-cell *matCellDef="let row">
-            <span
-              class="status"
-              [ngClass]="{
-                'status-active': row['processStatus'] === 5,
-                'status-inactive': row['processStatus'] === 1,
-                'status-deactivated': row['processStatus'] === 3
-              }"
-            >
-              <span>{{ row.processStatusDesc }}</span>
-            </span>
+            {{ row.date | date }}
           </td>
         </ng-container>
 
         <ng-container matColumnDef="actions">
-          <th mat-header-cell *matHeaderCellDef mat-sort-header>Actions</th>
+          <th mat-header-cell *matHeaderCellDef mat-sort-header></th>
           <td mat-cell *matCellDef="let row">
             <div class="d-flex align-items-center">
               <div class="table-cta-container mr-2" matRipple>
                 <svg
-                  matTooltip="View"
+                  matTooltip="Edit"
                   matTooltipPosition="above"
                   matTooltipClass="custom-tooltip"
                   width="20"
-                  height="14"
-                  viewBox="0 0 20 14"
+                  height="18"
+                  viewBox="0 0 20 18"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
                 >
                   <path
-                    d="M19.7692 6.37611C17.8114 3.05382 14.1601 0.833374 10 0.833374C5.8382 0.833374 2.18765 3.05538 0.23078 6.37611C0.079686 6.6325 0 6.92467 0 7.22227C0 7.51987 0.079686 7.81204 0.23078 8.06843C2.18859 11.3907 5.83994 13.6111 10 13.6111C14.1618 13.6111 17.8123 11.3891 19.7692 8.0684C19.9203 7.81201 20 7.51985 20 7.22225C20 6.92466 19.9203 6.63249 19.7692 6.37611ZM10 11.9445C7.39021 11.9445 5.27779 9.83242 5.27779 7.22225C5.27779 4.61246 7.3898 2.50004 10 2.50004C12.6098 2.50004 14.7222 4.61205 14.7222 7.22225C14.7222 9.83204 12.6102 11.9445 10 11.9445ZM13.6111 7.22225C13.6111 9.21662 11.9944 10.8334 10 10.8334C8.00563 10.8334 6.3889 9.21662 6.3889 7.22225C6.3889 6.60739 6.54275 6.02854 6.81376 5.5218L6.81372 5.52291C6.81372 6.34413 7.47945 7.00982 8.30066 7.00982C9.12188 7.00982 9.78761 6.34409 9.78761 5.52291C9.78761 4.7017 9.12188 4.03597 8.30066 4.03597L8.29955 4.03601C8.80629 3.765 9.38514 3.61115 10 3.61115C11.9944 3.61115 13.6111 5.22788 13.6111 7.22225Z"
+                    d="M13.9792 2.99797L17.1111 6.12991C17.2431 6.26185 17.2431 6.47713 17.1111 6.60908L9.52778 14.1924L6.30556 14.55C5.875 14.5987 5.51042 14.2341 5.55903 13.8035L5.91667 10.5813L13.5 2.99797C13.6319 2.86602 13.8472 2.86602 13.9792 2.99797ZM19.6042 2.20283L17.9097 0.508382C17.3819 -0.0193956 16.5243 -0.0193956 15.9931 0.508382L14.7639 1.73755C14.6319 1.86949 14.6319 2.08477 14.7639 2.21672L17.8958 5.34866C18.0278 5.4806 18.2431 5.4806 18.375 5.34866L19.6042 4.11949C20.1319 3.58824 20.1319 2.7306 19.6042 2.20283ZM13.3333 12.1299V15.6646H2.22222V4.55352H10.2014C10.3125 4.55352 10.4167 4.50838 10.4965 4.43199L11.8854 3.0431C12.1493 2.77922 11.9618 2.3313 11.5903 2.3313H1.66667C0.746528 2.3313 0 3.07783 0 3.99797V16.2202C0 17.1403 0.746528 17.8869 1.66667 17.8869H13.8889C14.809 17.8869 15.5556 17.1403 15.5556 16.2202V10.741C15.5556 10.3695 15.1076 10.1855 14.8438 10.4459L13.4549 11.8348C13.3785 11.9146 13.3333 12.0188 13.3333 12.1299Z"
                     fill="#989DB3"
                   />
                 </svg>
               </div>
-
-              <!--<div class="toggle-container">
-                    <mat-slide-toggle
-                      class="example-margin"
-                      color="primary"
-                      matTooltipPosition="above"
-                      matTooltipClass="custom-tooltip"
-                      [matTooltip]="row.status === 1 ? 'Deactivate' : 'Activate'"
-                      [checked]="row.status === 1 ? 'true' : 'false'"
-                      (toggleChange)="onToggle(row)"
-                    >
-                    </mat-slide-toggle>
-                  </div>-->
             </div>
             <ng-template #noActions> Unauthorized </ng-template>
           </td>
