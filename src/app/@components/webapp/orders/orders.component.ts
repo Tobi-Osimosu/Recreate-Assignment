@@ -19,6 +19,6 @@ export class OrdersComponent implements OnInit {
 
   onGetCurrencyDetails(event: any) {
     this.data = null;
-
+    console.log(event);
   }
 }

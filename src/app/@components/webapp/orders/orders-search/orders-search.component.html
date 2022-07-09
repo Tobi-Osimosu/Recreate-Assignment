@@ -15,10 +15,13 @@
             [matAutocomplete]="autoComplete"
           />
 
-          <mat-autocomplete #autoComplete="matAutocomplete">
+          <mat-autocomplete
+            #autoComplete="matAutocomplete"
+            (optionSelected)="searchParams.emit($event.option.value)"
+          >
             <mat-option
               *ngFor="let option of filteredOptions | async"
-              [value]="option"
+              [value]="option.shortName"
             >
               {{ option.shortName }} ({{ option.fullName }})
             </mat-option>

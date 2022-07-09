@@ -29,21 +29,13 @@ export class OrdersSearchComponent implements OnInit {
   }
 
   onSearchChange(resData: any) {
-    console.log(resData.value);
     this.filteredOptions = of(this._filter(resData?.value || ''));
-
-    this.filteredOptions.subscribe((resData: any) => {
-      console.log(resData);
-    });
   }
 
   private _filter(value: string): any[] {
     const filterValue = value.toLowerCase();
 
-    console.log(this.options);
-
     return this.options.filter((option: any) => {
-      console.log(option);
       return option.shortName.toLowerCase().includes(filterValue);
     });
   }
