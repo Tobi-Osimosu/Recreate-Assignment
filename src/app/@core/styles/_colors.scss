@@ -101,9 +101,10 @@ $mat-recreate-red: (
 $primary: #3c49e4;
 $accent: #2d40b3;
 
-$purple-light: #f6f6ff;
-$purple-light2: #cfd6ff;
-$purple-light3: #a0adff;
+// $bg1: #f8f9fe;
+$bg1: #f6f7fe;
+
+$header: #0e0c11;
 
 $black1: #333333;
 $black2: #222222;
@@ -114,8 +115,6 @@ $grey3: #848484;
 
 $white: #ffffff;
 
-$dark-purple: #120b3e;
-
 $colors: (
   --primary-color: (
     $primary,
@@ -123,29 +122,23 @@ $colors: (
   --accent-color: (
     $accent,
   ),
+  --bg1: (
+    $bg1,
+  ),
+  --header: (
+    $header,
+  ),
   --variation1: (
     $black1,
   ),
-  --variation2: (
-    $purple-light,
-  ),
   --variation3: (
     $grey1,
-  ),
-  --header: (
-    $dark-purple,
   ),
   --subheader: (
     $black2,
   ),
   --variation4: (
     $grey2,
-  ),
-  --variation5: (
-    $purple-light2,
-  ),
-  --variation6: (
-    $purple-light3,
   ),
   --variation9: (
     $grey3,

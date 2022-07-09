@@ -128,7 +128,7 @@ aside {
         }
 
         &:hover {
-          background: #f6f6ff;
+          background: #f6f7fe;
 
           .link-container {
             .icon {
@@ -158,7 +158,7 @@ aside {
 
         &.active {
           color: var(--primary-color);
-          background: #f6f6ff;
+          background: #f6f7fe;
 
           &::after {
             content: "";

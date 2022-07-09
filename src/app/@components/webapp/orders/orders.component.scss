@@ -1,0 +1,44 @@
+#orders {
+  $navbarHeight: 4.4375rem;
+
+  padding: 2rem 1.5rem;
+  width: 100%;
+  min-height: calc(100vh - $navbarHeight);
+  background: var(--bg1);
+
+  .header-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    gap: 1.25rem;
+    margin-bottom: 1.5rem;
+
+    .header {
+      font-size: 1.875rem;
+      font-weight: 700;
+      font-family: "Greycliff CF", sans-serif;
+      color: var(--header);
+      margin-bottom: 0rem;
+    }
+
+    .cta-container {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-box-pack: end;
+      -ms-flex-pack: end;
+      justify-content: flex-end;
+    }
+  }
+}
