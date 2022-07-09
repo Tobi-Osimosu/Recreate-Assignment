@@ -7,6 +7,16 @@
   overflow: hidden;
 
   .orders-table-header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    gap: 0.5rem;
     padding: 0.875rem 1.5rem;
 
     .header {
@@ -14,6 +24,25 @@
       font-weight: 700;
       color: var(--header);
       margin-bottom: 0rem;
+    }
+
+    .right-section {
+      .parameter-container {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+
+        .parameter-title {
+          font-weight: 600;
+          margin-bottom: 0rem;
+        }
+      }
     }
   }
 }

@@ -1,7 +1,21 @@
 <div id="orders-table">
-    <div class="orders-table-header">
-        <h4 class="header">Product Summary</h4>
+  <div class="orders-table-header">
+    <h4 class="header">Product Summary</h4>
+
+    <div class="right-section">
+      <div class="parameter-container">
+        <p class="parameter-title">Show</p>
+
+        <div class="input-style1">
+          <mat-form-field appearance="outline" [style.width.%]="100">
+            <mat-select value="all columns">
+              <mat-option value="all columns"> All Columns </mat-option>
+            </mat-select>
+          </mat-form-field>
+        </div>
+      </div>
     </div>
+  </div>
 
   <ng-container *ngIf="data !== null && dataSource; else noTableData">
     <div class="table-responsive">
