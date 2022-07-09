@@ -18,9 +18,9 @@ header {
   }
 
   .navbar-brand {
-    svg {
-      height: 55px;
-    }
+    font-weight: 600;
+    color: var(--primary-color);
+    font-size: 1.625rem;
   }
 
   .menu-container {
@@ -60,19 +60,6 @@ header {
         border-radius: 5px;
         background: #222222;
         // background: var(--variation1);
-      }
-    }
-  }
-}
-
-@media screen and (max-width: 767px) {
-  header {
-    .navbar-brand {
-      padding: 0;
-
-      svg {
-        height: 45px;
-        width: 110px;
       }
     }
   }

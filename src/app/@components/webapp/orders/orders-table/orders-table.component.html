@@ -13,17 +13,17 @@
             </mat-select>
           </mat-form-field>
         </div>
+      </div>
 
-        <div class="input-style1">
-          <mat-form-field appearance="outline" [style.width.%]="100">
-            <input
-              matInput
-              type="text"
-              placeholder="Search Entries"
-              (keyup)="search($event)"
-            />
-          </mat-form-field>
-        </div>
+      <div class="input-style1">
+        <mat-form-field appearance="outline" [style.width.%]="100">
+          <input
+            matInput
+            type="text"
+            placeholder="Search Entries"
+            (keyup)="search($event)"
+          />
+        </mat-form-field>
       </div>
 
       <button matRipple class="btn rc-btn-flat">DISPATCH SELECTED</button>
